@@ -27,4 +27,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/peregrinum-app:latest
+          tags: ghcr.io/l-shane-l/peregrinum-app:latest
