@@ -5,14 +5,14 @@ FROM haskell:9.6.5 as builder
 WORKDIR /app
 
 # Copy the stack configuration files and Haskell package descriptor
-COPY stack.yaml stack.yaml.lock package.yaml hserver.cabal /app/
-COPY README.md CHANGELOG.md LICENSE Setup.hs /app/
+COPY hserver/stack.yaml hserver/stack.yaml.lock hserver/package.yaml hserver/hserver.cabal /app/
+COPY hserver/README.md hserver/CHANGELOG.md hserver/LICENSE hserver/Setup.hs /app/
 
 # Copy the rest of the necessary source files
-COPY src /app/src
-COPY app /app/app
-COPY test /app/test
-COPY static /app/static
+COPY hserver/src /app/src
+COPY hserver/app /app/app
+COPY hserver/test /app/test
+COPY hserver/static /app/static
 
 # Install dependencies
 RUN stack build --system-ghc --dependencies-only
@@ -29,7 +29,6 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y \
   libgmp-dev \
   && rm -rf /var/lib/apt/lists/*
-
 
 # Copy the binary from the builder image
 # Note: Adjust the path according to where the executable is placed
