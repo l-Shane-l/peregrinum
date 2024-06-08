@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shane's Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.12"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body
+    style="background: linear-gradient(to right, #003366, #000033)"
+    class="text-gray-900 font-sans"
+  >
+    <div id="particles-js"></div>
+
+    <nav hx-get="nav.html" hx-trigger="load"></nav>
+
+    <div class="container mx-auto px-4">
+      <header class="text-center py-12 text-white">
+        <h1 class="text-4xl font-bold">Welcome to My Projects Page</h1>
+        <p class="mt-2">A brief overview of my projects and experiments.</p>
+      </header>
+
+      <main>
+        <section hx-get="about.html" hx-trigger="load"></section>
+        <section hx-get="projects.html" hx-trigger="load"></section>
+      </main>
+
+      <footer class="text-center py-8 text-gray-600 text-white">
+        © 2024 My Projects. All rights reserved.
+      </footer>
+    </div>
+    <script src="/js/BOF.js"></script>
+  </body>
+</html>

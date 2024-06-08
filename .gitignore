@@ -1,0 +1,38 @@
+# Stack build files
+.stack-work/
+dist/
+dist-newstyle/
+*.cabal-sandbox/
+cabal.sandbox.config
+*.o
+*.hi
+*.chi
+*.chs.h
+*.dyn_o
+*.dyn_hi
+
+# Executable files
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Temporary files
+*.swp
+*~
+.DS_Store
+
+# Cabal files
+cabal.project.local
+cabal.project.local~
+
+# Stack configuration
+stack.yaml.lock
+
+# Package files
+*.tar.gz
+*.tar
+*.zip
+
+# Logs
+*.log
