@@ -5,7 +5,7 @@ FROM haskell:9.6.5 as builder
 WORKDIR /app
 
 # Copy the stack configuration files and Haskell package descriptor
-COPY hserver/stack.yaml hserver/stack.yaml.lock hserver/package.yaml hserver/hserver.cabal /app/
+COPY hserver/stack.yaml hserver/package.yaml hserver/hserver.cabal /app/
 COPY hserver/README.md hserver/CHANGELOG.md hserver/LICENSE hserver/Setup.hs /app/
 
 # Copy the rest of the necessary source files
