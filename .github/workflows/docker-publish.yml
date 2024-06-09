@@ -1,3 +1,5 @@
+name: Build and Push Docker Image
+
 on:
   push:
     branches:
@@ -6,6 +8,7 @@ on:
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
+
     permissions:
       contents: read
       packages: write
@@ -13,6 +16,17 @@ jobs:
     steps:
       - name: Check out the repository
         uses: actions/checkout@v2
+
+      - name: Set up Git LFS
+        run: |
+          sudo apt-get install git-lfs
+          git lfs install
+          git lfs pull
+
+      - name: Verify GIF files are correctly checked out
+        run: |
+          ls -alh hserver/static/*.gif
+          sha256sum hserver/static/*.gif
 
       - name: Log in to GitHub Container Registry
         uses: docker/login-action@v1
@@ -28,3 +42,6 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ghcr.io/l-shane-l/peregrinum-app:latest
+
+      - name: Clean up Git LFS
+        run: git lfs uninstall
