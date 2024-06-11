@@ -38,6 +38,7 @@ library
     , bytestring
     , filepath
     , http-media
+    , http-types
     , servant
     , servant-server
     , wai
@@ -60,6 +61,7 @@ executable hserver-exe
     , filepath
     , hserver
     , http-media
+    , http-types
     , servant
     , servant-server
     , wai
@@ -83,6 +85,7 @@ test-suite hserver-test
     , filepath
     , hserver
     , http-media
+    , http-types
     , servant
     , servant-server
     , wai

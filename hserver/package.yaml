@@ -29,6 +29,7 @@ dependencies:
   - filepath
   - wai-cors
   - bytestring
+  - http-types
 
 ghc-options:
   - -Wall
