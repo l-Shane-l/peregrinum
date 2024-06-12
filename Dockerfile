@@ -34,7 +34,7 @@ RUN apt-get update && apt-get install -y \
 # Copy the binary from the builder image
 # Note: Adjust the path according to where the executable is placed
 COPY --from=builder /root/.local/bin/hserver-exe /app/
-
+COPY --from=builder /app/projects.json /app/projects.json
 COPY --from=builder /app/static /app/static
 
 # Expose the port your app runs on
