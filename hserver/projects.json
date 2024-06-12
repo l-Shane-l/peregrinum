@@ -4,7 +4,7 @@
       "summary": {
         "title": "Beatspeak",
         "imageSrc": "/assets/gifs/Beatspeak.gif",
-        "overview": "A short summary about Beatspeak, highlighting what visitors can learn or discover.",
+        "overview": "This is a remote heartrate sensing C++ application that uses head movement to filter a users heartrate from a video source",
         "additionalInfo": ""
       },
       "name": "Beatspeak",
@@ -18,25 +18,25 @@
     },
     {
       "summary": {
-        "overview": "A short summary about Driocht, highlighting what visitors can learn or discover.",
+        "overview": "This is a programming language I created that is similar to C and lisp but in Gaeilge(Irish)",
         "title": "Driocht",
         "imageSrc": "/assets/gifs/Driocht.gif",
         "additionalInfo": ""
       },
       "name": "Driocht",
       "details": {
-        "additionalInfo": "Further details about Driocht's capabilities and future directions.",
+        "additionalInfo": "I created this because I was curious what it would be like to code in Irish, I think the language with its verb first structure lent it self well to coding",
         "title": "Driocht",
         "imageSrc": "/assets/gifs/Driocht.gif",
-        "overview": "This project focuses on leveraging advanced machine learning techniques to detect and analyze complex patterns in data."
+        "overview": "After getting a basic prototype working I havent done much with this, the main challenge being all development is done in English, its difficult to justify using a different langauge let alone create one. How ever recently I have been spening more time on this, there is definetly a place for it in rapid throw away scripts and personal procject. The speed up of having a custom written langauge can really add up"
       },
       "icon": "fas fa-magic  text-blue-800 text-5xl"
     },
     {
       "icon": "fas fa-language text-blue-800 text-5xl",
       "details": {
-        "additionalInfo": "Recently, the use of supervised learning has improved system performance, making it more efficient in noise handling. Efforts are ongoing to prepare Beatspeak for open-sourcing.",
-        "overview": "This project began in college as a wearable sensor and has evolved into a non-contact version using MIT research principles. It incorporates OpenCV in a multithreaded environment, blending digital signal processing with linear algebra.",
+        "additionalInfo": "Luckily because Irish was recognised as an official langauge of the EU the Parliment, which means there are thousands of documents publically available that were translated by professionals, I was able to use this and train a model over a week that performed quite well, it was compariable to google translate perforance in the early 2010s",
+        "overview": "The core challenge of this Project was finding English and Irish sentence pairs, the Irish language is terrible under reasourced expeically on the web. Scrapping the content was the hardest part, expeically in doing it in a way with good quality",
         "title": "NMT",
         "imageSrc": "/assets/gifs/NMT.gif"
       },
@@ -45,14 +45,14 @@
         "additionalInfo": "",
         "imageSrc": "/assets/gifs/NMT.gif",
         "title": "NMT",
-        "overview": "A short summary about Beatspeak, highlighting what visitors can learn or discover."
+        "overview": "This is a project that uses Neural Machine Translation techniques in C++ with scraping tools written in Haskell and perl to craete a translation mode for Gaeilge(Irish) to English and back"
       }
     },
     {
       "summary": {
         "imageSrc": "/assets/gifs/Autonomous-Car.gif",
         "title": "Autonomous-Car",
-        "overview": "A short summary about Autonomous-Car, highlighting what visitors can learn or discover.",
+        "overview": "I built this a few years ago to experiment and play with concepts in driverless cars",
         "additionalInfo": ""
       },
       "name": "Autonomous-Car",
@@ -60,15 +60,15 @@
       "details": {
         "title": "Autonomous-Car",
         "imageSrc": "/assets/gifs/Autonomous-Car.gif",
-        "overview": "Description of  main functionalities and special features.",
-        "additionalInfo": "Additional details and future developments for Autonomous-Car."
+        "overview": "I built this shortly after my first drone to experiment and play with concepts in driverless cars",
+        "additionalInfo": "The first iteration was simply an arduino conntected to ir sensors, then I added the raspberry pi and camera. The car can be controlled over wifi in manual or automated mode. I built a system that uses a kalmen filter with the ir sensors and camera for navigation. In the future I intend to attach a cheap 360 lidar I purchased to get realtime inforamtion on its environment. Ultimately I want to train up some deep reinforcement models and the ability to map environment so the car can opterate autonomously"
       }
     },
     {
       "icon": "fas fa-helicopter text-blue-800 text-5xl",
       "details": {
-        "additionalInfo": "More developments and updates about Autonomous-Drone are on the way as the project continues to expand its capabilities.",
-        "overview": "Autonomous-Drone began as an innovative project and has evolved to incorporate advanced technologies and methodologies, demonstrating significant progress in its field.",
+        "additionalInfo": "I built the first drone with great difficulty using a CNC I had previously built and barely got it flying, following this I switch away from a modular system and used a raspberry pie with a quadcopter, i wrote cascading pid sensors to keep the drone in the air and then navigation software that used the gps with models trained in an unreal engine environment. A lot of what I did is available for free in arduino pilot and other open source projects. The point however was to learn and I think I achieved this. In the future id like to add the lidar.",
+        "overview": "",
         "imageSrc": "/assets/gifs/Autonomous-Drone.gif",
         "title": "Autonomous-Drone"
       },
@@ -76,7 +76,7 @@
       "summary": {
         "imageSrc": "/assets/gifs/Autonomous-Drone.gif",
         "title": "Autonomous-Drone",
-        "overview": "A short summary about Autonomous-Drone, highlighting what visitors can learn or discover.",
+        "overview": "I began building a drone out of curiousity and have been adding to it over the years",
         "additionalInfo": ""
       }
     },
@@ -86,25 +86,25 @@
         "title": "Autonomous-Navigation",
         "imageSrc": "/assets/gifs/Autonomous-Navigation.gif",
         "overview": "Autonomous-Navigation began as an innovative project and has evolved to incorporate advanced technologies and methodologies, demonstrating significant progress in its field.",
-        "additionalInfo": "More developments and updates about Autonomous-Navigation are on the way as the project continues to expand its capabilities."
+        "additionalInfo": "The approach I took was to use the gps signal with maps api to map out a route and rely on collision detection and rerouting to handle any issues that arouse. I used pathing algorithms, decission trees and kalmen filters. One approach I was pretty proud of was training on a virtual enviromant using unreal engine."
       },
       "name": "Autonomous-Navigation",
       "summary": {
         "additionalInfo": "",
         "title": "Autonomous-Navigation",
         "imageSrc": "/assets/gifs/Autonomous-Navigation.gif",
-        "overview": "A short summary about Autonomous-Navigation, highlighting what visitors can learn or discover."
+        "overview": "With both the car and the drone, navigation because the most interesting application as it enables full autonomy. "
       }
     },
     {
       "summary": {
         "additionalInfo": "",
-        "overview": "A short summary about Autonomous-Object-Detection, highlighting what visitors can learn or discover.",
+        "overview": "For navigation, and with the drones and car the core challenge is detecting objections",
         "title": "Autonomous-Object-Detection",
         "imageSrc": "/assets/gifs/Autonomous-Object-Detection.gif"
       },
       "details": {
-        "additionalInfo": "More developments and updates about Autonomous-Object-Detection are on the way as the project continues to expand its capabilities.",
+        "additionalInfo": "For this I used a variety of sensors from IR to Radar on the low cost side and from camera's to lidars on the more expensive side. The trick is setting them up to be reliable and figuring out how to combine the data, a kalmen filter works quite well. Even with good knowledge of the environment giving the systems good decision making abilities is hard, I started off with decission tress and moved into classic AI concepts. Now I am looking more and more into Deep reinforcement learning approaches",
         "overview": "Autonomous-Object-Detection began as an innovative project and has evolved to incorporate advanced technologies and methodologies, demonstrating significant progress in its field.",
         "title": "Autonomous-Object-Detection",
         "imageSrc": "/assets/gifs/Autonomous-Object-Detection.gif"
@@ -114,4 +114,3 @@
     }
   ]
 }
-
