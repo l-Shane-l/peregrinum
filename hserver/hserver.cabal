@@ -34,12 +34,14 @@ library
       src
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
-      base >=4.7 && <5
+      aeson
+    , base >=4.7 && <5
+    , blaze-html
     , bytestring
     , filepath
     , http-media
-    , http-types
     , servant
+    , servant-blaze
     , servant-server
     , wai
     , wai-cors
@@ -49,6 +51,7 @@ library
 executable hserver-exe
   main-is: Main.hs
   other-modules:
+      Templates
       Paths_hserver
   autogen-modules:
       Paths_hserver
@@ -56,13 +59,15 @@ executable hserver-exe
       app
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.7 && <5
+      aeson
+    , base >=4.7 && <5
+    , blaze-html
     , bytestring
     , filepath
     , hserver
     , http-media
-    , http-types
     , servant
+    , servant-blaze
     , servant-server
     , wai
     , wai-cors
@@ -80,13 +85,15 @@ test-suite hserver-test
       test
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.7 && <5
+      aeson
+    , base >=4.7 && <5
+    , blaze-html
     , bytestring
     , filepath
     , hserver
     , http-media
-    , http-types
     , servant
+    , servant-blaze
     , servant-server
     , wai
     , wai-cors

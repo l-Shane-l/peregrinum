@@ -1,0 +1,109 @@
+{
+  "projects": [
+    {
+      "name": "Beatspeak",
+      "summary": {
+        "title": "Beatspeak",
+        "overview": "A short summary about Beatspeak, highlighting what visitors can learn or discover.",
+        "additionalInfo": "",
+        "imageSrc": "/assets/gifs/Beatspeak.gif"
+      },
+      "details": {
+        "title": "Beatspeak",
+        "overview": "This project began in college as a wearable sensor and has evolved into a non-contact version using MIT research principles. It incorporates OpenCV in a multithreaded environment, blending digital signal processing with linear algebra.",
+        "additionalInfo": "Recently, the use of supervised learning has improved system performance, making it more efficient in noise handling. Efforts are ongoing to prepare Beatspeak for open-sourcing.",
+        "imageSrc": "/assets/gifs/Beatspeak.gif"
+      }
+    },
+    {
+      "name": "Driocht",
+      "summary": {
+        "title": "Driocht",
+        "overview": "A short summary about Driocht, highlighting what visitors can learn or discover.",
+        "additionalInfo": "",
+        "imageSrc": "/assets/gifs/Driocht.gif"
+      },
+      "details": {
+        "title": "Driocht",
+        "overview": "This project focuses on leveraging advanced machine learning techniques to detect and analyze complex patterns in data.",
+        "additionalInfo": "Further details about Driocht's capabilities and future directions.",
+        "imageSrc": "/assets/gifs/Driocht.gif"
+      }
+    },
+    {
+      "name": "NMT",
+      "summary": {
+        "title": "NMT",
+        "overview": "A short summary about NMT, highlighting what visitors can learn or discover.",
+        "additionalInfo": "",
+        "imageSrc": "/assets/gifs/NMT.gif"
+      },
+      "details": {
+        "title": "NMT",
+        "overview": "Neural Machine Translation (NMT) leverages deep learning algorithms to translate text from one language to another with high accuracy.",
+        "additionalInfo": "Recent improvements in NMT have led to significant advancements in translation quality and speed.",
+        "imageSrc": "/assets/gifs/NMT.gif"
+      }
+    },
+    {
+      "name": "Autonomous-Object-Detection",
+      "summary": {
+        "title": "Autonomous-Object-Detection",
+        "overview": "A short summary about Autonomous-Object-Detection, highlighting what visitors can learn or discover.",
+        "additionalInfo": "",
+        "imageSrc": "/assets/gifs/Autonomous-Object-Detection.gif"
+      },
+      "details": {
+        "title": "Autonomous-Object-Detection",
+        "overview": "This project involves developing advanced algorithms for detecting and classifying objects in various environments.",
+        "additionalInfo": "Future work includes enhancing detection accuracy and expanding the range of detectable objects.",
+        "imageSrc": "/assets/gifs/Autonomous-Object-Detection.gif"
+      }
+    },
+    {
+      "name": "Autonomous-Navigation",
+      "summary": {
+        "title": "Autonomous-Navigation",
+        "overview": "A short summary about Autonomous-Navigation, highlighting what visitors can learn or discover.",
+        "additionalInfo": "",
+        "imageSrc": "/assets/gifs/Autonomous-Navigation.gif"
+      },
+      "details": {
+        "title": "Autonomous-Navigation",
+        "overview": "This project focuses on developing systems for autonomous navigation in complex environments using sensor fusion and AI techniques.",
+        "additionalInfo": "Current research aims to improve navigation accuracy and robustness in diverse conditions.",
+        "imageSrc": "/assets/gifs/Autonomous-Navigation.gif"
+      }
+    },
+    {
+      "name": "Autonomous-Drone",
+      "summary": {
+        "title": "Autonomous-Drone",
+        "overview": "A short summary about Autonomous-Drone, highlighting what visitors can learn or discover.",
+        "additionalInfo": "",
+        "imageSrc": "/assets/gifs/Autonomous-Drone.gif"
+      },
+      "details": {
+        "title": "Autonomous-Drone",
+        "overview": "Developing autonomous drone technology that can navigate and perform tasks without human intervention.",
+        "additionalInfo": "Focus areas include obstacle avoidance, real-time path planning, and multi-drone coordination.",
+        "imageSrc": "/assets/gifs/Autonomous-Drone.gif"
+      }
+    },
+    {
+      "name": "Autonomous-Car",
+      "summary": {
+        "title": "Autonomous-Car",
+        "overview": "A short summary about Autonomous-Car, highlighting what visitors can learn or discover.",
+        "additionalInfo": "",
+        "imageSrc": "/assets/gifs/Autonomous-Car.gif"
+      },
+      "details": {
+        "title": "Autonomous-Car",
+        "overview": "Research and development of autonomous vehicle technologies, including self-driving algorithms and safety systems.",
+        "additionalInfo": "The project aims to create reliable and safe autonomous driving systems for real-world applications.",
+        "imageSrc": "/assets/gifs/Autonomous-Car.gif"
+      }
+    }
+  ]
+}

@@ -1,5 +1,10 @@
-<div id="beatspeak-details" class="bg-white shadow-lg rounded-lg p-6">
-  <h2 class="text-xl font-semibold">Beatspeak</h2>
+<div id="beatspeak-details" class="bg-white shadow-lg rounded-lg p-6 relative">
+  <div class="flex items-center">
+    <!-- Smaller heart icon aligned with the title -->
+    <i class="fas fa-heart-pulse text-blue-800 text-2xl mr-2"></i>
+    <h2 class="text-xl font-semibold">Beatspeak</h2>
+  </div>
+
   <div class="flex flex-wrap mt-4">
     <div class="w-full md:w-1/2">
       <img
@@ -21,17 +26,16 @@
         performance, making it more efficient in noise handling. Efforts are
         ongoing to prepare Beatspeak for open-sourcing.
       </p>
-
-      <br />
-      <button
-        hx-get="beatspeak-summary.html"
-        hx-target="#beatspeak-details"
-        hx-trigger="click"
-        hx-swap="outerHTML"
-        class="text-blue-500"
-      >
-        Show Less
-      </button>
     </div>
+  </div>
+  <!-- Upside-down chevron at the bottom center -->
+  <div
+    class="mt-4 cursor-pointer flex flex-col items-center"
+    hx-get="beatspeak-summary.html"
+    hx-target="#beatspeak-details"
+    hx-trigger="click"
+    hx-swap="outerHTML"
+  >
+    <i class="fas fa-chevron-up text-gray-600 bounce"></i>
   </div>
 </div>

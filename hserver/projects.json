@@ -1,0 +1,117 @@
+{
+  "projects": [
+    {
+      "summary": {
+        "title": "Beatspeak",
+        "imageSrc": "/assets/gifs/Beatspeak.gif",
+        "overview": "A short summary about Beatspeak, highlighting what visitors can learn or discover.",
+        "additionalInfo": ""
+      },
+      "name": "Beatspeak",
+      "details": {
+        "additionalInfo": "Recently, the use of supervised learning has improved system performance, making it more efficient in noise handling. Efforts are ongoing to prepare Beatspeak for open-sourcing.",
+        "imageSrc": "/assets/gifs/Beatspeak.gif",
+        "title": "Beatspeak",
+        "overview": "This project began in college as a wearable sensor and has evolved into a non-contact version using MIT research principles. It incorporates OpenCV in a multithreaded environment, blending digital signal processing with linear algebra."
+      },
+      "icon": "fas fa-heart-pulse text-blue-800 text-5xl"
+    },
+    {
+      "summary": {
+        "overview": "A short summary about Driocht, highlighting what visitors can learn or discover.",
+        "title": "Driocht",
+        "imageSrc": "/assets/gifs/Driocht.gif",
+        "additionalInfo": ""
+      },
+      "name": "Driocht",
+      "details": {
+        "additionalInfo": "Further details about Driocht's capabilities and future directions.",
+        "title": "Driocht",
+        "imageSrc": "/assets/gifs/Driocht.gif",
+        "overview": "This project focuses on leveraging advanced machine learning techniques to detect and analyze complex patterns in data."
+      },
+      "icon": "fas fa-magic  text-blue-800 text-5xl"
+    },
+    {
+      "icon": "fas fa-language text-blue-800 text-5xl",
+      "details": {
+        "additionalInfo": "Recently, the use of supervised learning has improved system performance, making it more efficient in noise handling. Efforts are ongoing to prepare Beatspeak for open-sourcing.",
+        "overview": "This project began in college as a wearable sensor and has evolved into a non-contact version using MIT research principles. It incorporates OpenCV in a multithreaded environment, blending digital signal processing with linear algebra.",
+        "title": "NMT",
+        "imageSrc": "/assets/gifs/NMT.gif"
+      },
+      "name": "NMT",
+      "summary": {
+        "additionalInfo": "",
+        "imageSrc": "/assets/gifs/NMT.gif",
+        "title": "NMT",
+        "overview": "A short summary about Beatspeak, highlighting what visitors can learn or discover."
+      }
+    },
+    {
+      "summary": {
+        "imageSrc": "/assets/gifs/Autonomous-Car.gif",
+        "title": "Autonomous-Car",
+        "overview": "A short summary about Autonomous-Car, highlighting what visitors can learn or discover.",
+        "additionalInfo": ""
+      },
+      "name": "Autonomous-Car",
+      "icon": "fas fa-car text-blue-800 text-5xl",
+      "details": {
+        "title": "Autonomous-Car",
+        "imageSrc": "/assets/gifs/Autonomous-Car.gif",
+        "overview": "Description of  main functionalities and special features.",
+        "additionalInfo": "Additional details and future developments for Autonomous-Car."
+      }
+    },
+    {
+      "icon": "fas fa-helicopter text-blue-800 text-5xl",
+      "details": {
+        "additionalInfo": "More developments and updates about Autonomous-Drone are on the way as the project continues to expand its capabilities.",
+        "overview": "Autonomous-Drone began as an innovative project and has evolved to incorporate advanced technologies and methodologies, demonstrating significant progress in its field.",
+        "imageSrc": "/assets/gifs/Autonomous-Drone.gif",
+        "title": "Autonomous-Drone"
+      },
+      "name": "Autonomous-Drone",
+      "summary": {
+        "imageSrc": "/assets/gifs/Autonomous-Drone.gif",
+        "title": "Autonomous-Drone",
+        "overview": "A short summary about Autonomous-Drone, highlighting what visitors can learn or discover.",
+        "additionalInfo": ""
+      }
+    },
+    {
+      "icon": "fas fa-map-location text-blue-800 text-5xl",
+      "details": {
+        "title": "Autonomous-Navigation",
+        "imageSrc": "/assets/gifs/Autonomous-Navigation.gif",
+        "overview": "Autonomous-Navigation began as an innovative project and has evolved to incorporate advanced technologies and methodologies, demonstrating significant progress in its field.",
+        "additionalInfo": "More developments and updates about Autonomous-Navigation are on the way as the project continues to expand its capabilities."
+      },
+      "name": "Autonomous-Navigation",
+      "summary": {
+        "additionalInfo": "",
+        "title": "Autonomous-Navigation",
+        "imageSrc": "/assets/gifs/Autonomous-Navigation.gif",
+        "overview": "A short summary about Autonomous-Navigation, highlighting what visitors can learn or discover."
+      }
+    },
+    {
+      "summary": {
+        "additionalInfo": "",
+        "overview": "A short summary about Autonomous-Object-Detection, highlighting what visitors can learn or discover.",
+        "title": "Autonomous-Object-Detection",
+        "imageSrc": "/assets/gifs/Autonomous-Object-Detection.gif"
+      },
+      "details": {
+        "additionalInfo": "More developments and updates about Autonomous-Object-Detection are on the way as the project continues to expand its capabilities.",
+        "overview": "Autonomous-Object-Detection began as an innovative project and has evolved to incorporate advanced technologies and methodologies, demonstrating significant progress in its field.",
+        "title": "Autonomous-Object-Detection",
+        "imageSrc": "/assets/gifs/Autonomous-Object-Detection.gif"
+      },
+      "icon": "fas fa-eye-low-vision text-blue-800 text-5xl",
+      "name": "Autonomous-Object-Detection"
+    }
+  ]
+}
+
