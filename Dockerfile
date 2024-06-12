@@ -13,6 +13,7 @@ COPY hserver/src /app/src
 COPY hserver/app /app/app
 COPY hserver/test /app/test
 COPY hserver/static /app/static
+COPY hserver/projects.json /app/projects.json
 
 # Install dependencies
 RUN stack build --system-ghc --dependencies-only
@@ -34,7 +35,6 @@ RUN apt-get update && apt-get install -y \
 # Note: Adjust the path according to where the executable is placed
 COPY --from=builder /root/.local/bin/hserver-exe /app/
 
-# You might also want to serve static files
 COPY --from=builder /app/static /app/static
 
 # Expose the port your app runs on
