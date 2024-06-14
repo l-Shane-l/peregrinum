@@ -50,9 +50,20 @@
         <meta name="viewport" content="width=device-width,initial-scale=1" />
     </head>
     <body>
-        <div id="container" class="noselect">
-            <canvas class="frame" id="canvas" oncontextmenu="event.preventDefault()" tabindex="-1"></canvas>
+        <div class="containter" style="background: black">
+
+    <div class="d-flex flex-column">
+     <div class="p-2" style="text-align:center;">
+            
+                <p>Doom</p>
+                </div>
+    <div class="p-2" style="text-align:center;">
+
+            <canvas class="frame"  width="80%" height="50%"  id="canvas" oncontextmenu="event.preventDefault()" tabindex="-1"></canvas>
+
         </div>
+      </div>
+    </div>
         <script>
             var commonArgs = ["-iwad", "doom1.wad", "-window", "-nogui", "-nomusic", "-config", "default.cfg", "-servername", "doomflare"];
 
