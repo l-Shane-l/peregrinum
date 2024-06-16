@@ -83,7 +83,6 @@ projectDetailsTemplate project = H.div ! A.id (H.toValue (name project ++ "-deta
     H.div ! A.class_ "w-full md:w-1/2" $ do
       H.img ! A.src (H.toValue (imageSrc $ details project)) ! A.alt (H.toValue (name project ++ " project in action")) ! A.class_ "w-full h-auto"
     H.div ! A.class_ "w-full md:w-1/2 px-4" $ do
-      H.h3 ! A.class_ "text-lg font-bold" $ "Project Overview"
       H.p $ H.toHtml (overview $ details project)
       H.br
       H.p $ H.toHtml (additionalInfo $ details project)

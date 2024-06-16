@@ -36,7 +36,7 @@
     },
     {
       "summary": {
-        "overview": "This is a programming language I created that is similar to C and lisp but in Gaeilge(Irish)",
+        "overview": "This is a programming language I created that is similar to C and lisp but in Gaeilge(Irish), the idea was to experiment with a programing language not in English",
         "title": "Driocht",
         "imageSrc": "/assets/gifs/Driocht.gif",
         "additionalInfo": ""
@@ -47,32 +47,32 @@
         "title": "Driocht",
         "imageSrc": "/assets/gifs/Driocht.gif",
         "overview": "After getting a basic prototype working I havent done much with this, the main challenge being all development is done in English, its difficult to justify using a different langauge let alone create one. How ever recently I have been spening more time on this, there is definetly a place for it in rapid throw away scripts and personal procject. The speed up of having a custom written langauge can really add up",
-        "conclusion": "Placeholder"
+        "conclusion": "There is a lot more id like to do with this, resently ive been experimenting with a lambda calculus langauge that compiles to C, the idea is to simply support the basic opperations of the language and then build up the control flow and other features in the calculus as a way to learn this different approach to coding. Using concepts pionnered by Church, Curry and others I should be able to build up a very expressive language that compiles to C. The efficicy wont be good to start with but its an interesting exercise. Also there might be an opertunity to include a macro system similar to lisp, although this is probably unnessary with lambda calculus's beta reduction"
       },
       "icon": "fas fa-magic  text-blue-800 text-5xl"
     },
     {
       "icon": "fas fa-language text-blue-800 text-5xl",
       "details": {
-        "additionalInfo": "Luckily because Irish was recognised as an official langauge of the EU the Parliment, which means there are thousands of documents publically available that were translated by professionals, I was able to use this and train a model over a week that performed quite well, it was compariable to google translate perforance in the early 2010s",
-        "overview": "The core challenge of this Project was finding English and Irish sentence pairs, the Irish language is terrible under reasourced expeically on the web. Scrapping the content was the hardest part, expeically in doing it in a way with good quality",
+        "additionalInfo": "Luckily because Irish was recognised as an official langauge of the EU the Parliment, which means there are thousands of documents publically available that were translated by professionals, I was able to use this and train a model over a week that performed quite well, it was compariable to google translate perforance in the early 2010s. In the gif to the left you can see the stats of the GPU's training the model, I had to really use every bit of memory and power to get something trained at all",
+        "overview": "The core challenge of this Project was finding English and Irish sentence pairs, the Irish language is terrible under reasourced expeically on the web. Scrapping the content was the hardest part, expeically in doing it in a way with good quality.",
         "title": "NMT",
-        "imageSrc": "/assets/gifs/NMT.gif"
+        "imageSrc": "/assets/gifs/NMT.gif",
+        "conclusion": "I really enjoyed building this model, translation to me is the killer feature of NLP and the hardest challenge in it, the challege of finding and gathering good quality data, then cleaning and processing it is universally applicable to challenges in NLP. The whole process of training neural nets to learn the patterns and structure of a new language is really interesing, double so when you consider it has no knowledge of english so is essentially building up knowledge of both langauges by comparing them."
       },
       "name": "NMT",
       "summary": {
         "additionalInfo": "",
         "imageSrc": "/assets/gifs/NMT.gif",
         "title": "NMT",
-        "overview": "This is a project that uses Neural Machine Translation techniques in C++ with scraping tools written in Haskell and perl to craete a translation mode for Gaeilge(Irish) to English and back",
-        "conclusion": "Placeholder"
+        "overview": "This is a project that uses Neural Machine Translation techniques in C++ with scraping tools written in Haskell and Perl to craete a translation mode for Gaeilge(Irish) to English and back, once the data is gathered the model trains for days"
       }
     },
     {
       "summary": {
         "imageSrc": "/assets/gifs/Autonomous-Car.gif",
         "title": "Autonomous-Car",
-        "overview": "I built this a few years ago to experiment and play with concepts in driverless cars",
+        "overview": "I built this a few years ago to experiment and play with concepts in driverless cars, the main idea was to get something I could controll remotely then use models hosted on more powerful server to make the car autonomous",
         "additionalInfo": ""
       },
       "name": "Autonomous-Car",
@@ -80,26 +80,26 @@
       "details": {
         "title": "Autonomous-Car",
         "imageSrc": "/assets/gifs/Autonomous-Car.gif",
-        "overview": "I built this shortly after my first drone to experiment and play with concepts in driverless cars",
+        "overview": "I built this shortly after my first drone to experiment and play with concepts in driverless cars, the main idea was to get something I could controll remotely then use models hosted on more powerful server to make the car autonomous. It uses wifi to communicate with the server, in the gif to the left im controlling it from a flutter app running on a laptop. The idea is to have Deep reinforcement learning models control the car in a set environment. One of the interesting challenges is trying to decide what to host on the car locally and what to do on the car.",
         "additionalInfo": "The first iteration was simply an arduino conntected to ir sensors, then I added the raspberry pi and camera. The car can be controlled over wifi in manual or automated mode. I built a system that uses a kalmen filter with the ir sensors and camera for navigation. In the future I intend to attach a cheap 360 lidar I purchased to get realtime inforamtion on its environment. Ultimately I want to train up some deep reinforcement models and the ability to map environment so the car can opterate autonomously",
-        "conclusion": "Placeholder"
+        "conclusion": "The car uses a lot of the software I built in other projects like the navigation and obstacle detection projects also listed on this site. The navigation generally runs on the server although it can upload a route. The obstacle detection runs locally on the rasperry pi and has the ability to override and stop commands locally. If this was a real world project the car should be running a real time operating system so the car could be stoped immediately upon finding an obstacle. What i liked most about this project was showing how much can be done witha  simply raspberry pi, an arduino and the right set of algorithms, of course making this safe to operate in an environment with humans would take exponentially more work, but with a small battery operated car the risk of damage was minimal, despite what my Cats would tell you"
       }
     },
     {
       "icon": "fas fa-helicopter text-blue-800 text-5xl",
       "details": {
-        "additionalInfo": "I built the first drone with great difficulty using a CNC I had previously built and barely got it flying, following this I switch away from a modular system and used a raspberry pie with a quadcopter, i wrote cascading pid sensors to keep the drone in the air and then navigation software that used the gps with models trained in an unreal engine environment. A lot of what I did is available for free in arduino pilot and other open source projects. The point however was to learn and I think I achieved this. In the future id like to add the lidar.",
-        "overview": "",
+        "additionalInfo": "I built the first drone with great difficulty using a CNC I had previously built and barely got it flying, following this I switch away from creating my own hardware and used a raspberry pie with a quadcopter, i wrote cascading pid sensors to keep the drone in the air and then navigation software that used the gps with models trained in unreal engine environment. A lot of what I did is available for free in arduino pilot and other open source projects. The point however was to learn and I think I achieved this. In the future id like to add the lidar.",
+        "overview": "When first starting on the drone the challenge seemed impossible, and indeed in the begining trying to build everything from scratch was a bridge too far. Over the years though I swapped in components and modules from the drone creator scene which added stability, and I build my own systems that performed quite well. In the end I was able to build two quad copters both indoor and out door and a fixed wing drone. The performance of the drones was passable but they required very calm weather which was hard to find in Ireland. I vividly remember when I first saw a DJI flying in near storm weather and how stable it was, my heart sank that day at how poorly my designs compared",
         "imageSrc": "/assets/gifs/Autonomous-Drone.gif",
-        "title": "Autonomous-Drone"
+        "title": "Autonomous-Drone",
+        "conclusion": "Ultimately it was geography that stopped my progress on this project, in 2020 I moved away from Meath and lost access to a workshop, my tools and a space to test. I would like to return to this come day but Its unlikely I will have access to the same reasources in the near future. It also notable that the scene has moved on so dramatically since I worked on my hobby version, it feels like a lot of maturity has come into the drone making field which makes it less interesting and exciting to work in"
       },
       "name": "Autonomous-Drone",
       "summary": {
         "imageSrc": "/assets/gifs/Autonomous-Drone.gif",
         "title": "Autonomous-Drone",
-        "overview": "I began building a drone out of curiousity and have been adding to it over the years",
-        "additionalInfo": "Placeholder",
-        "conclusion": "Placeholde"
+        "overview": "I began building a drone out of curiousity and have been adding to it over the years, I havent actively worked on it since 2020 as I moved away from access to a workshop, but I hope to return to it some day in the future",
+        "additionalInfo": "Placeholder"
       }
     },
     {
@@ -108,15 +108,15 @@
         "title": "Autonomous-Navigation",
         "imageSrc": "/assets/gifs/Autonomous-Navigation.gif",
         "overview": "Autonomous-Navigation began as an innovative project and has evolved to incorporate advanced technologies and methodologies, demonstrating significant progress in its field.",
-        "additionalInfo": "The approach I took was to use the gps signal with maps api to map out a route and rely on collision detection and rerouting to handle any issues that arouse. I used pathing algorithms, decission trees and kalmen filters. One approach I was pretty proud of was training on a virtual enviromant using unreal engine."
+        "additionalInfo": "The approach I took was to use the gps signal with maps api to map out a route and rely on collision detection and rerouting to handle any issues that arouse. I used pathing algorithms, decission trees and kalmen filters. One approach I was pretty proud of was training on a virtual enviromant using unreal engine.",
+        "conclusion": "For this to really be usefull it would need to work on maps taken from google maps or something similar, hand crafting the maps is very error prone and time intensive. Ive seen examples of systems that use camera's to built 3d models, with technoloy from VR and AR this will probably become a lot more viable, however it still requires someone or something to travel the route first and probably periodically. My intention was to use the maps and topological data to always fly a minimum distance above ground to avoid obstacles, this however reduces the distance the drones can travel as it requires more energy especially in bad weather conditions"
       },
       "name": "Autonomous-Navigation",
       "summary": {
         "additionalInfo": "Placeholder",
         "title": "Autonomous-Navigation",
         "imageSrc": "/assets/gifs/Autonomous-Navigation.gif",
-        "overview": "With both the car and the drone, navigation because the most interesting application as it enables full autonomy. ",
-        "conclusion": "Placeholder"
+        "overview": "With both the car and the drone, navigation because the most interesting application as it enables full autonomy. For my approach it took the form of pre-rendering roots using models generated in unreal engine"
       }
     },
     {
@@ -127,11 +127,11 @@
         "imageSrc": "/assets/gifs/Autonomous-Object-Detection.gif"
       },
       "details": {
-        "additionalInfo": "For this I used a variety of sensors from IR to Radar on the low cost side and from camera's to lidars on the more expensive side. The trick is setting them up to be reliable and figuring out how to combine the data, a kalmen filter works quite well. Even with good knowledge of the environment giving the systems good decision making abilities is hard, I started off with decission tress and moved into classic AI concepts. Now I am looking more and more into Deep reinforcement learning approaches",
+        "additionalInfo": "For this I used a variety of sensors from IR to Radar on the low cost side and from camera's to lidars on the more expensive side. The trick is setting them up to be reliable and figuring out how to combine the data, a kalmen filter works quite well. Even with good knowledge of the environment giving the systems good decision making abilities is hard, I started off with decission tress and moved into classic AI concepts. Now I am looking more and more into Deep reinforcement learning approaches.",
         "overview": "Autonomous-Object-Detection began as an innovative project and has evolved to incorporate advanced technologies and methodologies, demonstrating significant progress in its field.",
         "title": "Autonomous-Object-Detection",
         "imageSrc": "/assets/gifs/Autonomous-Object-Detection.gif",
-        "conclusion": "Placeholder"
+        "conclusion": "The obstacle detection is most important for the car drone and less so for the aerial drone as it can fly at high altitudes. The obstacle detection needs to run locally on the drones as it cant rely on networks or deal with the latency of networks, it also must work every time. For example lossing a drone to a collision with a flock of birds is a very expensive loss of a prototype that can lead to day trying to recover the lost asset. Also getting the balance between false positive and false negatives was an exercise in frustration."
       },
       "icon": "fas fa-eye-low-vision text-blue-800 text-5xl",
       "name": "Autonomous-Object-Detection"
