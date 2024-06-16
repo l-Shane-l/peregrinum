@@ -4,7 +4,7 @@
       "summary": {
         "title": "Beatspeak",
         "imageSrc": "/assets/gifs/Beatspeak.gif",
-        "overview": "This is a remote heartrate sensing C++ application that uses head movement to filter a users heartrate from a video source",
+        "overview": "This is a remote heartrate sensing C++ application that uses head movement to filter a users heartrate from a video source. The system is a collection of custom algorithms written in C++ and tuned using Bayesian Optimization",
         "additionalInfo": ""
       },
       "name": "Beatspeak",
@@ -12,9 +12,27 @@
         "additionalInfo": "Recently, the use of supervised learning has improved system performance, making it more efficient in noise handling. Efforts are ongoing to prepare Beatspeak for open-sourcing.",
         "imageSrc": "/assets/gifs/Beatspeak.gif",
         "title": "Beatspeak",
-        "overview": "This project began in college as a wearable sensor and has evolved into a non-contact version using MIT research principles. It incorporates OpenCV in a multithreaded environment, blending digital signal processing with linear algebra."
+        "overview": "This project began in college as a wearable sensor and has evolved into a non-contact version using MIT research principles. It incorporates OpenCV in a multithreaded environment, blending digital signal processing with linear algebra.The project is basically applied singal processing in the form of a modern C++ multithreaded application. The key challenge is in getting high accuracy in most cases (and know when its low accuracy), the accuracy has to be achieved in a computationally effective way as my vision for this is something that runs on any smart phone.",
+        "conclusion": "The sensor is just the first part of this, hopefully a reliable source of heartrate data will open up application in diagnosis, prevention and health insight using the latest trends in ML and datas science. This may require adding more metrics to monitor like body heat, respiration rate or other forms of movement that can be tracked using the same core algorihtms implemented for the HR"
       },
       "icon": "fas fa-heart-pulse text-blue-800 text-5xl"
+    },
+    {
+      "summary": {
+        "overview": "This is a web crawler(Damhan Alla is the Irish for spider) i built in Haskell and knowledge extractor created in a mixture of python and C++. The minded data is processed using a plethora of ML techniques and models",
+        "title": "Damhan",
+        "imageSrc": "/assets/gifs/Driocht.gif",
+        "additionalInfo": ""
+      },
+      "name": "Damhan",
+      "details": {
+        "additionalInfo": "The idea is quite simple, I want to be able to point to a website or public record and have the crawler pull all the information from these sources. The idea is that relevant sites will be linked to each other, via references and other qoutes, while there will be divergence due to advertising etc this will be filtered out later, also advertisements are not as useless as they might first appear. Who chooses to advertise on these sites provides information of the local economy and target audience. Once the data is gathered and stored the next step is cleaning this is all done in Haskell with the results being saved to a Neo4j database and a postgress database. Once the data is cleaned python scripts are used with libraries like SpaCy to extract entities from the text and break it into part of speech (Noun, Adjective etc). With entities extracted we have a list of persons, places and things but these need to be related to each other in a logical way. Using K means clustering and TF indexing candities of related entities are gathered. Finally these pairs are feed to a Kernel Support Vector Machine I trained to classify if and what their relastionships are. The final data is loaded into Neo4j where the net of relationships can be seen. From here graph algorithms can be run to identify crucial nodes, key figures or even potential oppertunities",
+        "title": "Damhan",
+        "imageSrc": "/assets/pics/damhan.webp",
+        "overview": "I built this crawler initially in Perl and then in Haskell, it starts with a list of sites and teh ethically crawls them, the crawler runs batches in parallel. It will take all links from the first generation and list them to be search in the next. The relationship between links is stored in a graph database. The content is stored in a raw from in an SQL database, the idea being to put a minimal load on crawled sites. ",
+        "conclusion": "The real challenge in this is creating an efficient relationship classifier, I have experimented with transformer models like Bert but ultimately a SVM is best, however as this is a supervised method it requires labelled data. I have begun to gather this but until the kSVM performs with a 95% or greater accuracy im relying heavily on llama3 as a stand in. The LLM works really well but is not efficient, luckly however it is building up a training set to tain the kSVM on"
+      },
+      "icon": "fas fa-spider  text-blue-800 text-5xl"
     },
     {
       "summary": {
@@ -28,7 +46,8 @@
         "additionalInfo": "I created this because I was curious what it would be like to code in Irish, I think the language with its verb first structure lent it self well to coding",
         "title": "Driocht",
         "imageSrc": "/assets/gifs/Driocht.gif",
-        "overview": "After getting a basic prototype working I havent done much with this, the main challenge being all development is done in English, its difficult to justify using a different langauge let alone create one. How ever recently I have been spening more time on this, there is definetly a place for it in rapid throw away scripts and personal procject. The speed up of having a custom written langauge can really add up"
+        "overview": "After getting a basic prototype working I havent done much with this, the main challenge being all development is done in English, its difficult to justify using a different langauge let alone create one. How ever recently I have been spening more time on this, there is definetly a place for it in rapid throw away scripts and personal procject. The speed up of having a custom written langauge can really add up",
+        "conclusion": "Placeholder"
       },
       "icon": "fas fa-magic  text-blue-800 text-5xl"
     },
@@ -45,7 +64,8 @@
         "additionalInfo": "",
         "imageSrc": "/assets/gifs/NMT.gif",
         "title": "NMT",
-        "overview": "This is a project that uses Neural Machine Translation techniques in C++ with scraping tools written in Haskell and perl to craete a translation mode for Gaeilge(Irish) to English and back"
+        "overview": "This is a project that uses Neural Machine Translation techniques in C++ with scraping tools written in Haskell and perl to craete a translation mode for Gaeilge(Irish) to English and back",
+        "conclusion": "Placeholder"
       }
     },
     {
@@ -61,7 +81,8 @@
         "title": "Autonomous-Car",
         "imageSrc": "/assets/gifs/Autonomous-Car.gif",
         "overview": "I built this shortly after my first drone to experiment and play with concepts in driverless cars",
-        "additionalInfo": "The first iteration was simply an arduino conntected to ir sensors, then I added the raspberry pi and camera. The car can be controlled over wifi in manual or automated mode. I built a system that uses a kalmen filter with the ir sensors and camera for navigation. In the future I intend to attach a cheap 360 lidar I purchased to get realtime inforamtion on its environment. Ultimately I want to train up some deep reinforcement models and the ability to map environment so the car can opterate autonomously"
+        "additionalInfo": "The first iteration was simply an arduino conntected to ir sensors, then I added the raspberry pi and camera. The car can be controlled over wifi in manual or automated mode. I built a system that uses a kalmen filter with the ir sensors and camera for navigation. In the future I intend to attach a cheap 360 lidar I purchased to get realtime inforamtion on its environment. Ultimately I want to train up some deep reinforcement models and the ability to map environment so the car can opterate autonomously",
+        "conclusion": "Placeholder"
       }
     },
     {
@@ -77,7 +98,8 @@
         "imageSrc": "/assets/gifs/Autonomous-Drone.gif",
         "title": "Autonomous-Drone",
         "overview": "I began building a drone out of curiousity and have been adding to it over the years",
-        "additionalInfo": ""
+        "additionalInfo": "Placeholder",
+        "conclusion": "Placeholde"
       }
     },
     {
@@ -90,15 +112,16 @@
       },
       "name": "Autonomous-Navigation",
       "summary": {
-        "additionalInfo": "",
+        "additionalInfo": "Placeholder",
         "title": "Autonomous-Navigation",
         "imageSrc": "/assets/gifs/Autonomous-Navigation.gif",
-        "overview": "With both the car and the drone, navigation because the most interesting application as it enables full autonomy. "
+        "overview": "With both the car and the drone, navigation because the most interesting application as it enables full autonomy. ",
+        "conclusion": "Placeholder"
       }
     },
     {
       "summary": {
-        "additionalInfo": "",
+        "additionalInfo": "Placeholder",
         "overview": "For navigation, and with the drones and car the core challenge is detecting objections",
         "title": "Autonomous-Object-Detection",
         "imageSrc": "/assets/gifs/Autonomous-Object-Detection.gif"
@@ -107,7 +130,8 @@
         "additionalInfo": "For this I used a variety of sensors from IR to Radar on the low cost side and from camera's to lidars on the more expensive side. The trick is setting them up to be reliable and figuring out how to combine the data, a kalmen filter works quite well. Even with good knowledge of the environment giving the systems good decision making abilities is hard, I started off with decission tress and moved into classic AI concepts. Now I am looking more and more into Deep reinforcement learning approaches",
         "overview": "Autonomous-Object-Detection began as an innovative project and has evolved to incorporate advanced technologies and methodologies, demonstrating significant progress in its field.",
         "title": "Autonomous-Object-Detection",
-        "imageSrc": "/assets/gifs/Autonomous-Object-Detection.gif"
+        "imageSrc": "/assets/gifs/Autonomous-Object-Detection.gif",
+        "conclusion": "Placeholder"
       },
       "icon": "fas fa-eye-low-vision text-blue-800 text-5xl",
       "name": "Autonomous-Object-Detection"
