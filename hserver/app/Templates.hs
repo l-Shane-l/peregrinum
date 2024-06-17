@@ -27,7 +27,8 @@ data ProjectInfo = ProjectInfo
     overview :: String,
     additionalInfo :: String,
     imageSrc :: String,
-    conclusion :: Maybe String
+    conclusion :: Maybe String,
+    gitHubLink :: Maybe String
   }
   deriving (Show, Generic)
 
@@ -88,6 +89,8 @@ projectDetailsTemplate project = H.div ! A.id (H.toValue (name project ++ "-deta
       H.p $ H.toHtml (additionalInfo $ details project)
       H.br
       maybe (return ()) (H.p . H.toHtml) (conclusion $ details project)
+      H.br
+      maybe (return ()) renderGitHubLink (gitHubLink $ details project)
   H.div
     ! A.class_ "mt-4 cursor-pointer flex flex-col items-center"
     ! H.customAttribute "data-hx-get" (H.toValue $ "/summary/" <> H.toValue (title $ summary project))
@@ -96,3 +99,8 @@ projectDetailsTemplate project = H.div ! A.id (H.toValue (name project ++ "-deta
     ! H.customAttribute "data-hx-swap" "outerHTML"
     $ do
       H.i ! A.class_ "fas fa-chevron-up text-gray-600 bounce" $ ""
+
+renderGitHubLink :: String -> H.Html
+renderGitHubLink url = H.a ! A.href (H.toValue url) ! A.class_ "github-link" $ do
+  H.i ! A.class_ "fab fa-github " $ ""
+  " View the Code on Github"

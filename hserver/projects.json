@@ -13,7 +13,8 @@
         "imageSrc": "/assets/gifs/Beatspeak.gif",
         "title": "Beatspeak",
         "overview": "Originally conceived during my college years as a wearable sensor project, Beatspeak has transformed into a sophisticated non-contact heart rate monitor. Leveraging principles from MIT research and incorporating OpenCV, it operates within a multithreaded framework. This project essentially applies advanced signal processing and linear algebra to create a robust, modern C++ application. A critical goal is achieving high accuracy in heart rate detection, which must be computationally efficient to be viable on smartphone platforms.",
-        "conclusion": "Beatspeak is just the beginning. My vision extends to using reliable heart rate data as a springboard into the realms of medical diagnosis, preventive healthcare, and insightful health monitoring. Future enhancements may include monitoring additional physiological metrics such as body temperature and respiration rate. These expansions will utilize the core algorithms initially designed for heart rate detection, supporting broader applications in mobile health technology."
+        "conclusion": "Beatspeak is just the beginning. My vision extends to using reliable heart rate data as a springboard into the realms of medical diagnosis, preventive healthcare, and insightful health monitoring. Future enhancements may include monitoring additional physiological metrics such as body temperature and respiration rate. These expansions will utilize the core algorithms initially designed for heart rate detection, supporting broader applications in mobile health technology.",
+        "gitHubLink": "https://github.com/l-Shane-l/beatspeak"
       },
       "icon": "fas fa-heart-pulse text-blue-800 text-5xl"
     },
@@ -47,6 +48,7 @@
         "title": "Driocht",
         "imageSrc": "/assets/gifs/Driocht.gif",
         "overview": "Initially, Driocht began as a basic prototype. While progress has been sporadic due to the predominance of English in software development, recent efforts have reinvigorated the project. Driocht has shown potential particularly for quick, disposable scripts and personal projects where the bespoke nature of the language can streamline processes.",
+        "gitHubLink": "https://github.com/l-Shane-l/Dra-ocht",
         "conclusion": "Looking forward, I am eager to expand Driocht's capabilities. Recent experiments include integrating lambda calculus that compiles into C, aiming to foster a minimalistic yet powerful syntax based on foundational programming principles by Church and Curry. This approach will allow building complex control structures and functionalities directly in lambda calculus, potentially incorporating a macro system similar to Lisp. While efficiency is not the primary goal at this stage, the project serves as a fascinating study in language design and the potential of theoretical computer science applications."
       },
       "icon": "fas fa-magic text-blue-800 text-5xl"
@@ -58,6 +60,7 @@
         "overview": "The primary challenge in this project was the scarcity of high-quality English and Irish sentence pairs, especially from online sources. The process of scraping content was particularly difficult, requiring careful attention to maintain the quality of the data collected.",
         "title": "NMT",
         "imageSrc": "/assets/gifs/NMT.gif",
+        "gitHubLink": "https://github.com/l-Shane-l/gaeilge-nmt",
         "conclusion": "Developing this translation model was immensely rewarding. Translation is a cornerstone of natural language processing (NLP) and poses some of its greatest challenges. The tasks of locating, cleaning, and processing high-quality data are crucial skills applicable across various NLP projects. Training neural networks to recognize and replicate the patterns and structures of languages—particularly starting from zero knowledge of English and Irish—was a fascinating and enlightening experience."
       },
       "name": "NMT",
@@ -82,6 +85,7 @@
         "imageSrc": "/assets/gifs/Autonomous-Car.gif",
         "overview": "Originally built as an extension of my drone projects, this autonomous car experiment explores advanced vehicle control and AI-driven navigation. The system uses Wi-Fi to connect with a server where deep reinforcement learning models dictate the car's actions within a controlled environment. The balance of local versus server-side processing presents an intriguing challenge in autonomous systems design.",
         "additionalInfo": "Starting with an Arduino connected to IR sensors, the system evolved with the addition of a Raspberry Pi and camera for enhanced control and navigation. The vehicle operates in both manual and automated modes, utilizing a Kalman filter combined with IR and camera input for precise navigation. Plans are in place to incorporate a low-cost 360 LIDAR for real-time environmental mapping, aiming to further the car's autonomous capabilities with deep reinforcement learning and advanced environmental mapping.",
+        "gitHubLink": "https://github.com/l-Shane-l/LinuxBotApp",
         "conclusion": "The autonomous car integrates software developed for other projects, including navigation and obstacle detection systems. While navigation tasks are generally server-handled, obstacle detection operates locally on the Raspberry Pi, providing immediate response capabilities. This project exemplifies the potential of simple hardware like the Raspberry Pi and Arduino when combined with sophisticated algorithms. While operational safety in human environments requires significant additional development, the small, battery-operated design minimizes risk—despite the occasional feline interference."
       }
     },
@@ -99,6 +103,7 @@
         "imageSrc": "/assets/gifs/Autonomous-Drone.gif",
         "overview": "From initial struggles with homemade hardware to integrating modular components for stability, this project has evolved into creating both indoor and outdoor quadcopters and a fixed-wing drone. Although limited by local weather conditions, the journey from basic prototypes to functional drones has been a deeply educational experience.",
         "additionalInfo": "The project transitioned from rudimentary designs using an Arduino and IR sensors to more sophisticated setups involving Raspberry Pi and camera systems, controlled over Wi-Fi. Future enhancements include integrating LIDAR for better navigation and potentially revisiting the project with new technologies despite geographical and resource constraints encountered since my move from Meath in 2020.",
+        "gitHubLink": "https://github.com/l-Shane-l/Drone-Controller",
         "conclusion": "Though my progress was halted due to losing access to essential resources, the dream of reviving this project persists. The advancements in drone technology have both inspired and challenged the feasibility of returning to this passion project."
       }
     },
@@ -116,6 +121,7 @@
         "imageSrc": "/assets/gifs/Autonomous-Navigation.gif",
         "overview": "Starting with GPS data and API maps, the project has progressed to using collision detection, rerouting strategies, and simulations in Unreal Engine to enhance pathfinding algorithms.",
         "additionalInfo": "The ultimate goal is to integrate technology from VR and AR to improve real-time navigation without relying on pre-scanned routes, aiming to minimize the drone's energy consumption and increase its range, even in challenging weather.",
+        "gitHubLink": "https://github.com/l-Shane-l/Drone-Flight-Planner",
         "conclusion": "While the current system requires hand-crafted maps and faces efficiency challenges, the integration of AR/VR technologies could revolutionize how autonomous systems navigate and interact with their environments."
       }
     },
@@ -133,6 +139,7 @@
         "imageSrc": "/assets/gifs/Autonomous-Object-Detection.gif",
         "overview": "Combining various sensors like IR, radar, cameras, and LIDAR, this project aims to develop a comprehensive object detection system that can operate reliably in real-time on autonomous vehicles.",
         "additionalInfo": "The integration of Kalman filters and the transition from decision trees to deep reinforcement learning approaches are enhancing the system's decision-making capabilities, crucial for both aerial and ground-based autonomous vehicles.",
+        "gitHubLink": "https://github.com/l-Shane-l/Lidar",
         "conclusion": "Balancing false positives and negatives remains a challenge, but the project is crucial for enhancing safety. The aim is to develop a system that functions independently of network latency and is capable of preventing costly accidents, such as collisions with unexpected obstacles."
       }
     }
