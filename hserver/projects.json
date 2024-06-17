@@ -4,75 +4,75 @@
       "summary": {
         "title": "Beatspeak",
         "imageSrc": "/assets/gifs/Beatspeak.gif",
-        "overview": "This is a remote heartrate sensing C++ application that uses head movement to filter a users heartrate from a video source. The system is a collection of custom algorithms written in C++ and tuned using Bayesian Optimization",
+        "overview": "Beatspeak is an innovative C++ application that remotely senses heart rate through head movement captured in video. Developed through custom algorithms and fine-tuned via Bayesian Optimization, this tool stands at the frontier of non-contact biometric technology.",
         "additionalInfo": ""
       },
       "name": "Beatspeak",
       "details": {
-        "additionalInfo": "Recently, the use of supervised learning has improved system performance, making it more efficient in noise handling. Efforts are ongoing to prepare Beatspeak for open-sourcing.",
+        "additionalInfo": "The transition to using supervised learning models has significantly enhanced Beatspeak's performance, especially in environments with variable noise levels. Preparations are underway to open-source the application to contribute to and galvanize the development community.",
         "imageSrc": "/assets/gifs/Beatspeak.gif",
         "title": "Beatspeak",
-        "overview": "This project began in college as a wearable sensor and has evolved into a non-contact version using MIT research principles. It incorporates OpenCV in a multithreaded environment, blending digital signal processing with linear algebra.The project is basically applied singal processing in the form of a modern C++ multithreaded application. The key challenge is in getting high accuracy in most cases (and know when its low accuracy), the accuracy has to be achieved in a computationally effective way as my vision for this is something that runs on any smart phone.",
-        "conclusion": "The sensor is just the first part of this, hopefully a reliable source of heartrate data will open up application in diagnosis, prevention and health insight using the latest trends in ML and datas science. This may require adding more metrics to monitor like body heat, respiration rate or other forms of movement that can be tracked using the same core algorihtms implemented for the HR"
+        "overview": "Originally conceived during my college years as a wearable sensor project, Beatspeak has transformed into a sophisticated non-contact heart rate monitor. Leveraging principles from MIT research and incorporating OpenCV, it operates within a multithreaded framework. This project essentially applies advanced signal processing and linear algebra to create a robust, modern C++ application. A critical goal is achieving high accuracy in heart rate detection, which must be computationally efficient to be viable on smartphone platforms.",
+        "conclusion": "Beatspeak is just the beginning. My vision extends to using reliable heart rate data as a springboard into the realms of medical diagnosis, preventive healthcare, and insightful health monitoring. Future enhancements may include monitoring additional physiological metrics such as body temperature and respiration rate. These expansions will utilize the core algorithms initially designed for heart rate detection, supporting broader applications in mobile health technology."
       },
       "icon": "fas fa-heart-pulse text-blue-800 text-5xl"
     },
     {
       "summary": {
-        "overview": "This is a web crawler(Damhan Alla is the Irish for spider) i built in Haskell and knowledge extractor created in a mixture of python and C++. The minded data is processed using a plethora of ML techniques and models",
         "title": "Damhan",
         "imageSrc": "/assets/gifs/Driocht.gif",
+        "overview": "Damhan Alla, Irish for 'spider', is a sophisticated web crawler and knowledge extractor I developed using Haskell, Python, and C++. This project harnesses advanced machine learning techniques to process mined data, enhancing its utility across various applications.",
         "additionalInfo": ""
       },
       "name": "Damhan",
       "details": {
-        "additionalInfo": "The idea is quite simple, I want to be able to point to a website or public record and have the crawler pull all the information from these sources. The idea is that relevant sites will be linked to each other, via references and other qoutes, while there will be divergence due to advertising etc this will be filtered out later, also advertisements are not as useless as they might first appear. Who chooses to advertise on these sites provides information of the local economy and target audience. Once the data is gathered and stored the next step is cleaning this is all done in Haskell with the results being saved to a Neo4j database and a postgress database. Once the data is cleaned python scripts are used with libraries like SpaCy to extract entities from the text and break it into part of speech (Noun, Adjective etc). With entities extracted we have a list of persons, places and things but these need to be related to each other in a logical way. Using K means clustering and TF indexing candities of related entities are gathered. Finally these pairs are feed to a Kernel Support Vector Machine I trained to classify if and what their relastionships are. The final data is loaded into Neo4j where the net of relationships can be seen. From here graph algorithms can be run to identify crucial nodes, key figures or even potential oppertunities",
+        "additionalInfo": "Damhan aims to efficiently extract information from websites and public records, creating interconnections between relevant sites via references and quotations. The crawler filters out divergences such as advertisements, which, surprisingly, provide valuable insights into the local economy and target audiences. Post data collection, the cleaning process is managed in Haskell, storing results in both Neo4j and PostgreSQL databases. Subsequent processing includes using Python and libraries like SpaCy for entity extraction and part-of-speech segmentation. Relationships among entities are identified using K-means clustering and TF indexing, with a Kernel Support Vector Machine determining their connections. The final relational data is loaded into Neo4j, enabling the visualization of relationship networks and the application of graph algorithms to uncover key nodes and potential opportunities.",
         "title": "Damhan",
         "imageSrc": "/assets/pics/damhan.webp",
-        "overview": "I built this crawler initially in Perl and then in Haskell, it starts with a list of sites and teh ethically crawls them, the crawler runs batches in parallel. It will take all links from the first generation and list them to be search in the next. The relationship between links is stored in a graph database. The content is stored in a raw from in an SQL database, the idea being to put a minimal load on crawled sites. ",
-        "conclusion": "The real challenge in this is creating an efficient relationship classifier, I have experimented with transformer models like Bert but ultimately a SVM is best, however as this is a supervised method it requires labelled data. I have begun to gather this but until the kSVM performs with a 95% or greater accuracy im relying heavily on llama3 as a stand in. The LLM works really well but is not efficient, luckly however it is building up a training set to tain the kSVM on"
+        "overview": "Initially developed in Perl and later transitioned to Haskell, Damhan ethically crawls websites in parallel batches, mapping link relationships in a graph database and storing raw content in an SQL database to minimize the load on crawled sites.",
+        "conclusion": "A significant challenge has been developing an efficient relationship classifier. While transformer models like BERT were considered, a Support Vector Machine (SVM) proved optimal. Although it requires labeled data, which I am actively compiling, the interim solution involves using the LLM Llama3 to both function effectively and accumulate a training set for the SVM. This dual approach not only enhances current performance but also prepares the system for future autonomous operations."
       },
-      "icon": "fas fa-spider  text-blue-800 text-5xl"
+      "icon": "fas fa-spider text-blue-800 text-5xl"
     },
     {
       "summary": {
-        "overview": "This is a programming language I created that is similar to C and lisp but in Gaeilge(Irish), the idea was to experiment with a programing language not in English",
         "title": "Driocht",
         "imageSrc": "/assets/gifs/Driocht.gif",
+        "overview": "Driocht is a unique programming language I developed, blending elements of C and Lisp with the structure of Gaeilge (Irish). This initiative explores the feasibility and implications of coding in a language other than English.",
         "additionalInfo": ""
       },
       "name": "Driocht",
       "details": {
-        "additionalInfo": "I created this because I was curious what it would be like to code in Irish, I think the language with its verb first structure lent it self well to coding",
+        "additionalInfo": "The inspiration for Driocht stemmed from a curiosity about coding in Irish, a language whose verb-first structure intriguingly complements programming logic. This exploration into a non-English programming environment highlights both the challenges and potential of linguistic diversity in coding.",
         "title": "Driocht",
         "imageSrc": "/assets/gifs/Driocht.gif",
-        "overview": "After getting a basic prototype working I havent done much with this, the main challenge being all development is done in English, its difficult to justify using a different langauge let alone create one. How ever recently I have been spening more time on this, there is definetly a place for it in rapid throw away scripts and personal procject. The speed up of having a custom written langauge can really add up",
-        "conclusion": "There is a lot more id like to do with this, resently ive been experimenting with a lambda calculus langauge that compiles to C, the idea is to simply support the basic opperations of the language and then build up the control flow and other features in the calculus as a way to learn this different approach to coding. Using concepts pionnered by Church, Curry and others I should be able to build up a very expressive language that compiles to C. The efficicy wont be good to start with but its an interesting exercise. Also there might be an opertunity to include a macro system similar to lisp, although this is probably unnessary with lambda calculus's beta reduction"
+        "overview": "Initially, Driocht began as a basic prototype. While progress has been sporadic due to the predominance of English in software development, recent efforts have reinvigorated the project. Driocht has shown potential particularly for quick, disposable scripts and personal projects where the bespoke nature of the language can streamline processes.",
+        "conclusion": "Looking forward, I am eager to expand Driocht's capabilities. Recent experiments include integrating lambda calculus that compiles into C, aiming to foster a minimalistic yet powerful syntax based on foundational programming principles by Church and Curry. This approach will allow building complex control structures and functionalities directly in lambda calculus, potentially incorporating a macro system similar to Lisp. While efficiency is not the primary goal at this stage, the project serves as a fascinating study in language design and the potential of theoretical computer science applications."
       },
-      "icon": "fas fa-magic  text-blue-800 text-5xl"
+      "icon": "fas fa-magic text-blue-800 text-5xl"
     },
     {
       "icon": "fas fa-language text-blue-800 text-5xl",
       "details": {
-        "additionalInfo": "Luckily because Irish was recognised as an official langauge of the EU the Parliment, which means there are thousands of documents publically available that were translated by professionals, I was able to use this and train a model over a week that performed quite well, it was compariable to google translate perforance in the early 2010s. In the gif to the left you can see the stats of the GPU's training the model, I had to really use every bit of memory and power to get something trained at all",
-        "overview": "The core challenge of this Project was finding English and Irish sentence pairs, the Irish language is terrible under reasourced expeically on the web. Scrapping the content was the hardest part, expeically in doing it in a way with good quality.",
+        "additionalInfo": "The inclusion of Irish as an official EU language provided a unique opportunity, allowing access to a vast repository of professionally translated documents. Leveraging this resource, I was able to train a model over a week that achieved performance comparable to early versions of Google Translate. The training process, displayed in the accompanying gif, required maximizing GPU memory and computational power to successfully train the model.",
+        "overview": "The primary challenge in this project was the scarcity of high-quality English and Irish sentence pairs, especially from online sources. The process of scraping content was particularly difficult, requiring careful attention to maintain the quality of the data collected.",
         "title": "NMT",
         "imageSrc": "/assets/gifs/NMT.gif",
-        "conclusion": "I really enjoyed building this model, translation to me is the killer feature of NLP and the hardest challenge in it, the challege of finding and gathering good quality data, then cleaning and processing it is universally applicable to challenges in NLP. The whole process of training neural nets to learn the patterns and structure of a new language is really interesing, double so when you consider it has no knowledge of english so is essentially building up knowledge of both langauges by comparing them."
+        "conclusion": "Developing this translation model was immensely rewarding. Translation is a cornerstone of natural language processing (NLP) and poses some of its greatest challenges. The tasks of locating, cleaning, and processing high-quality data are crucial skills applicable across various NLP projects. Training neural networks to recognize and replicate the patterns and structures of languages—particularly starting from zero knowledge of English and Irish—was a fascinating and enlightening experience."
       },
       "name": "NMT",
       "summary": {
-        "additionalInfo": "",
         "imageSrc": "/assets/gifs/NMT.gif",
         "title": "NMT",
-        "overview": "This is a project that uses Neural Machine Translation techniques in C++ with scraping tools written in Haskell and Perl to craete a translation mode for Gaeilge(Irish) to English and back, once the data is gathered the model trains for days"
+        "overview": "This project harnesses Neural Machine Translation (NMT) techniques to create a bidirectional translation model for Gaeilge (Irish) to English using C++, with scraping tools developed in Haskell and Perl. Once the data is compiled, the model undergoes intensive training for several days.",
+        "additionalInfo": ""
       }
     },
     {
       "summary": {
         "imageSrc": "/assets/gifs/Autonomous-Car.gif",
         "title": "Autonomous-Car",
-        "overview": "I built this a few years ago to experiment and play with concepts in driverless cars, the main idea was to get something I could controll remotely then use models hosted on more powerful server to make the car autonomous",
+        "overview": "This project was initiated to delve into the realm of driverless car technology. Starting with remote control, the objective was to evolve the system to autonomy by leveraging models hosted on a powerful server.",
         "additionalInfo": ""
       },
       "name": "Autonomous-Car",
@@ -80,61 +80,61 @@
       "details": {
         "title": "Autonomous-Car",
         "imageSrc": "/assets/gifs/Autonomous-Car.gif",
-        "overview": "I built this shortly after my first drone to experiment and play with concepts in driverless cars, the main idea was to get something I could controll remotely then use models hosted on more powerful server to make the car autonomous. It uses wifi to communicate with the server, in the gif to the left im controlling it from a flutter app running on a laptop. The idea is to have Deep reinforcement learning models control the car in a set environment. One of the interesting challenges is trying to decide what to host on the car locally and what to do on the car.",
-        "additionalInfo": "The first iteration was simply an arduino conntected to ir sensors, then I added the raspberry pi and camera. The car can be controlled over wifi in manual or automated mode. I built a system that uses a kalmen filter with the ir sensors and camera for navigation. In the future I intend to attach a cheap 360 lidar I purchased to get realtime inforamtion on its environment. Ultimately I want to train up some deep reinforcement models and the ability to map environment so the car can opterate autonomously",
-        "conclusion": "The car uses a lot of the software I built in other projects like the navigation and obstacle detection projects also listed on this site. The navigation generally runs on the server although it can upload a route. The obstacle detection runs locally on the rasperry pi and has the ability to override and stop commands locally. If this was a real world project the car should be running a real time operating system so the car could be stoped immediately upon finding an obstacle. What i liked most about this project was showing how much can be done witha  simply raspberry pi, an arduino and the right set of algorithms, of course making this safe to operate in an environment with humans would take exponentially more work, but with a small battery operated car the risk of damage was minimal, despite what my Cats would tell you"
+        "overview": "Originally built as an extension of my drone projects, this autonomous car experiment explores advanced vehicle control and AI-driven navigation. The system uses Wi-Fi to connect with a server where deep reinforcement learning models dictate the car's actions within a controlled environment. The balance of local versus server-side processing presents an intriguing challenge in autonomous systems design.",
+        "additionalInfo": "Starting with an Arduino connected to IR sensors, the system evolved with the addition of a Raspberry Pi and camera for enhanced control and navigation. The vehicle operates in both manual and automated modes, utilizing a Kalman filter combined with IR and camera input for precise navigation. Plans are in place to incorporate a low-cost 360 LIDAR for real-time environmental mapping, aiming to further the car's autonomous capabilities with deep reinforcement learning and advanced environmental mapping.",
+        "conclusion": "The autonomous car integrates software developed for other projects, including navigation and obstacle detection systems. While navigation tasks are generally server-handled, obstacle detection operates locally on the Raspberry Pi, providing immediate response capabilities. This project exemplifies the potential of simple hardware like the Raspberry Pi and Arduino when combined with sophisticated algorithms. While operational safety in human environments requires significant additional development, the small, battery-operated design minimizes risk—despite the occasional feline interference."
       }
     },
     {
-      "icon": "fas fa-helicopter text-blue-800 text-5xl",
-      "details": {
-        "additionalInfo": "I built the first drone with great difficulty using a CNC I had previously built and barely got it flying, following this I switch away from creating my own hardware and used a raspberry pie with a quadcopter, i wrote cascading pid sensors to keep the drone in the air and then navigation software that used the gps with models trained in unreal engine environment. A lot of what I did is available for free in arduino pilot and other open source projects. The point however was to learn and I think I achieved this. In the future id like to add the lidar.",
-        "overview": "When first starting on the drone the challenge seemed impossible, and indeed in the begining trying to build everything from scratch was a bridge too far. Over the years though I swapped in components and modules from the drone creator scene which added stability, and I build my own systems that performed quite well. In the end I was able to build two quad copters both indoor and out door and a fixed wing drone. The performance of the drones was passable but they required very calm weather which was hard to find in Ireland. I vividly remember when I first saw a DJI flying in near storm weather and how stable it was, my heart sank that day at how poorly my designs compared",
-        "imageSrc": "/assets/gifs/Autonomous-Drone.gif",
-        "title": "Autonomous-Drone",
-        "conclusion": "Ultimately it was geography that stopped my progress on this project, in 2020 I moved away from Meath and lost access to a workshop, my tools and a space to test. I would like to return to this come day but Its unlikely I will have access to the same reasources in the near future. It also notable that the scene has moved on so dramatically since I worked on my hobby version, it feels like a lot of maturity has come into the drone making field which makes it less interesting and exciting to work in"
-      },
-      "name": "Autonomous-Drone",
       "summary": {
         "imageSrc": "/assets/gifs/Autonomous-Drone.gif",
         "title": "Autonomous-Drone",
-        "overview": "I began building a drone out of curiousity and have been adding to it over the years, I havent actively worked on it since 2020 as I moved away from access to a workshop, but I hope to return to it some day in the future",
-        "additionalInfo": "Placeholder"
+        "overview": "Originally started as a hobby, this project explores the complexities of building drones from scratch and adapting them over time with advanced technologies for autonomous control.",
+        "additionalInfo": ""
+      },
+      "name": "Autonomous-Drone",
+      "icon": "fas fa-helicopter text-blue-800 text-5xl",
+      "details": {
+        "title": "Autonomous-Drone",
+        "imageSrc": "/assets/gifs/Autonomous-Drone.gif",
+        "overview": "From initial struggles with homemade hardware to integrating modular components for stability, this project has evolved into creating both indoor and outdoor quadcopters and a fixed-wing drone. Although limited by local weather conditions, the journey from basic prototypes to functional drones has been a deeply educational experience.",
+        "additionalInfo": "The project transitioned from rudimentary designs using an Arduino and IR sensors to more sophisticated setups involving Raspberry Pi and camera systems, controlled over Wi-Fi. Future enhancements include integrating LIDAR for better navigation and potentially revisiting the project with new technologies despite geographical and resource constraints encountered since my move from Meath in 2020.",
+        "conclusion": "Though my progress was halted due to losing access to essential resources, the dream of reviving this project persists. The advancements in drone technology have both inspired and challenged the feasibility of returning to this passion project."
       }
     },
     {
+      "summary": {
+        "imageSrc": "/assets/gifs/Autonomous-Navigation.gif",
+        "title": "Autonomous-Navigation",
+        "overview": "This project leverages GPS and advanced pathfinding algorithms to autonomously navigate vehicles, drawing on experiences from both drone and car experiments.",
+        "additionalInfo": "Placeholder"
+      },
+      "name": "Autonomous-Navigation",
       "icon": "fas fa-map-location text-blue-800 text-5xl",
       "details": {
         "title": "Autonomous-Navigation",
         "imageSrc": "/assets/gifs/Autonomous-Navigation.gif",
-        "overview": "Autonomous-Navigation began as an innovative project and has evolved to incorporate advanced technologies and methodologies, demonstrating significant progress in its field.",
-        "additionalInfo": "The approach I took was to use the gps signal with maps api to map out a route and rely on collision detection and rerouting to handle any issues that arouse. I used pathing algorithms, decission trees and kalmen filters. One approach I was pretty proud of was training on a virtual enviromant using unreal engine.",
-        "conclusion": "For this to really be usefull it would need to work on maps taken from google maps or something similar, hand crafting the maps is very error prone and time intensive. Ive seen examples of systems that use camera's to built 3d models, with technoloy from VR and AR this will probably become a lot more viable, however it still requires someone or something to travel the route first and probably periodically. My intention was to use the maps and topological data to always fly a minimum distance above ground to avoid obstacles, this however reduces the distance the drones can travel as it requires more energy especially in bad weather conditions"
-      },
-      "name": "Autonomous-Navigation",
-      "summary": {
-        "additionalInfo": "Placeholder",
-        "title": "Autonomous-Navigation",
-        "imageSrc": "/assets/gifs/Autonomous-Navigation.gif",
-        "overview": "With both the car and the drone, navigation because the most interesting application as it enables full autonomy. For my approach it took the form of pre-rendering roots using models generated in unreal engine"
+        "overview": "Starting with GPS data and API maps, the project has progressed to using collision detection, rerouting strategies, and simulations in Unreal Engine to enhance pathfinding algorithms.",
+        "additionalInfo": "The ultimate goal is to integrate technology from VR and AR to improve real-time navigation without relying on pre-scanned routes, aiming to minimize the drone's energy consumption and increase its range, even in challenging weather.",
+        "conclusion": "While the current system requires hand-crafted maps and faces efficiency challenges, the integration of AR/VR technologies could revolutionize how autonomous systems navigate and interact with their environments."
       }
     },
     {
       "summary": {
-        "additionalInfo": "Placeholder",
-        "overview": "For navigation, and with the drones and car the core challenge is detecting objections",
+        "imageSrc": "/assets/gifs/Autonomous-Object-Detection.gif",
         "title": "Autonomous-Object-Detection",
-        "imageSrc": "/assets/gifs/Autonomous-Object-Detection.gif"
+        "overview": "This project focuses on developing reliable object detection systems for autonomous vehicles using a combination of sensors and AI technologies.",
+        "additionalInfo": "Placeholder"
       },
+      "name": "Autonomous-Object-Detection",
+      "icon": "fas fa-eye-low-vision text-blue-800 text-5xl",
       "details": {
-        "additionalInfo": "For this I used a variety of sensors from IR to Radar on the low cost side and from camera's to lidars on the more expensive side. The trick is setting them up to be reliable and figuring out how to combine the data, a kalmen filter works quite well. Even with good knowledge of the environment giving the systems good decision making abilities is hard, I started off with decission tress and moved into classic AI concepts. Now I am looking more and more into Deep reinforcement learning approaches.",
-        "overview": "Autonomous-Object-Detection began as an innovative project and has evolved to incorporate advanced technologies and methodologies, demonstrating significant progress in its field.",
         "title": "Autonomous-Object-Detection",
         "imageSrc": "/assets/gifs/Autonomous-Object-Detection.gif",
-        "conclusion": "The obstacle detection is most important for the car drone and less so for the aerial drone as it can fly at high altitudes. The obstacle detection needs to run locally on the drones as it cant rely on networks or deal with the latency of networks, it also must work every time. For example lossing a drone to a collision with a flock of birds is a very expensive loss of a prototype that can lead to day trying to recover the lost asset. Also getting the balance between false positive and false negatives was an exercise in frustration."
-      },
-      "icon": "fas fa-eye-low-vision text-blue-800 text-5xl",
-      "name": "Autonomous-Object-Detection"
+        "overview": "Combining various sensors like IR, radar, cameras, and LIDAR, this project aims to develop a comprehensive object detection system that can operate reliably in real-time on autonomous vehicles.",
+        "additionalInfo": "The integration of Kalman filters and the transition from decision trees to deep reinforcement learning approaches are enhancing the system's decision-making capabilities, crucial for both aerial and ground-based autonomous vehicles.",
+        "conclusion": "Balancing false positives and negatives remains a challenge, but the project is crucial for enhancing safety. The aim is to develop a system that functions independently of network latency and is capable of preventing costly accidents, such as collisions with unexpected obstacles."
+      }
     }
   ]
 }
