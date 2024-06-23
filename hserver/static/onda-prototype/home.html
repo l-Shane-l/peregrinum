@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Alternative source for FullCalendar CSS -->
+      <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/index.global.min.js'></script></head>
+<body class="bg-gray-100">
+    <header class="p-5 bg-white shadow-md flex justify-between items-center">
+        <h1 class="text-xl font-bold">Welcome to the Home Page!</h1>
+        <div>
+            <h2 class="text-lg font-semibold">Weather in Valencia</h2>
+            <p class="text-gray-600">Sunny, 24°C</p> <!-- Mock data; replace with API call data -->
+        </div>
+    </header>
+
+    <div class="flex flex-col items-center justify-center min-h-screen pt-20">
+        <div class="w-full max-w-2xl text-center">
+            <!-- Calendar Placeholder -->
+            <div id="calendar" class="mt-6"></div>
+            <br>
+            <div class="mt-6">
+                <label for="file-upload" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer">
+                    Upload CSV
+                    <input id="file-upload" type="file" accept=".csv" style="display: none;" onchange="handleFileSelect(event)">
+                </label>
+                <p id="file-info" class="mt-2 text-gray-500"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/core@5.10.1/main.min.js'></script>
+    <script>
+        function handleFileSelect(event) {
+            const file = event.target.files[0]; // Get the selected file
+            const fileInfo = document.getElementById('file-info');
+            if (file) {
+                fileInfo.textContent = `Selected file: ${file.name}`;
+            } else {
+                fileInfo.textContent = 'No file selected.';
+            }
+        }
+
+        // Initialize FullCalendar
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth'
+            });
+            calendar.render();
+        });
+    </script>
+</body>
+</html>
+
